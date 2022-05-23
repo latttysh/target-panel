@@ -1,0 +1,27 @@
+.statwidget {
+  height: 400px;
+  width: 700px;
+  padding: 70px;
+  border-radius: 25px;
+  .title {
+    font-size: 35px;
+    color: white;
+    margin-bottom: 70px;
+    font-weight: bold;
+  }
+  .stats {
+    display: flex;
+    .stats-block {
+      margin-right: 100px;
+      &__title {
+        color: whitesmoke;
+        font-size: 22px;
+      }
+      &__count {
+        font-size: 70px;
+        color: white;
+        font-weight: bold;
+      }
+    }
+  }
+}

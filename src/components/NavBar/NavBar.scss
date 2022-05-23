@@ -1,0 +1,22 @@
+.navbar {
+  height: 50px;
+  background-color: #4f5467;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  .left {
+    display: flex;
+    .onWallet {
+      width: 100px;
+      margin-right: 50pxs;
+    }
+    .freeze {
+      width: 200px;
+    }
+  }
+  .right {
+    display: flex;
+    align-items: center;
+  }
+}

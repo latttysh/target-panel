@@ -1,0 +1,10 @@
+@import url('./_null.scss');
+
+.app {
+  display: flex;
+  width: 100%;
+  .container {
+    flex-grow: 1;
+    margin-left: 200px;
+  }
+}

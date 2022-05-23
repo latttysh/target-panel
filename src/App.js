@@ -5,6 +5,7 @@ import './App.scss';
 import SideBar from './components/SideBar';
 // Pages
 import Home from './pages/Home';
+import Support from './pages/Support';
 import Withdraw from './pages/Withdraw';
 import History from './pages/History';
 
@@ -17,6 +18,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/withdraw" element={<Withdraw />} />
           <Route path="/history" element={<History />} />
+          <Route path="/support" element={<Support />} />
           {/* <Route path="*" element={<NotFound />} /> */}
         </Routes>
       </div>

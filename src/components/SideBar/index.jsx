@@ -50,10 +50,12 @@ const SideBar = () => {
             <span>Notifications</span>
           </li>
           <p className="title">SERVICES</p>
+          <Link to="/Support">
           <li>
             <HealthAndSafetyIcon className="icon" />
-            <span>System Health</span>
+            <span>Поддержка</span>
           </li>
+          </Link>
           <li>
             <PsychologyIcon className="icon" />
             <span>Logs</span>

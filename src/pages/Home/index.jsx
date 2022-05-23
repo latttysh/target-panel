@@ -8,11 +8,9 @@ import Table from '../../components/Table';
 const Home = () => {
   return (
     <div className="home">
-      <div className="homeContainer">
         <NavBar />
         <SubHeader />
-
-        <div className="content">
+        <div className="stats-page">
           <StatWidget title={'Заявки'} today={12} yestarday={35} month={265} bgcolor={'#007d73'} />
           <StatWidget title={'Заказы'} today={0} yestarday={0} month={727} bgcolor={'#0285cb'} />
           <StatWidget title={'Доходы'} today={0} yestarday={0} month={9000} bgcolor={'#451382'} />
@@ -20,25 +18,25 @@ const Home = () => {
         <div className="charts">
           <Chart />
         </div>
-        <Table
+        <Table className="table"
           col={[
-            { field: 'date', headerName: 'Дата', width: 300 },
-            { field: 'id', headerName: 'Номер заказа', width: 300 },
-            { field: 'type', headerName: 'Тип работы', width: 300 },
+            { field: 'date', headerName: 'Дата', width: 120 },
+            { field: 'id', headerName: 'Номер заказа', width: 120 },
+            { field: 'type', headerName: 'Тип работы', width: 350 },
             {
               field: 'price',
               headerName: 'Стоимость, руб',
-              width: 300,
+              width: 140,
             },
             {
               field: 'status',
               headerName: 'Статус',
-              width: 300,
+              width: 140,
             },
             {
               field: 'final',
               headerName: 'Вознаграждение, руб',
-              width: 300,
+              width: 170,
             },
           ]}
           ro={[
@@ -53,7 +51,6 @@ const Home = () => {
           ]}
         />
       </div>
-    </div>
   );
 };
 

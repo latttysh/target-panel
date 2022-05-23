@@ -7,16 +7,40 @@
   padding: 0 20px;
   .left {
     display: flex;
+    align-items: center;
     .onWallet {
       width: 100px;
-      margin-right: 50pxs;
+      margin-right: 50px;
+      p {
+        color: white;
+      }
+      .count {
+        color: white;
+        font-weight: bold;
+      }
     }
     .freeze {
       width: 200px;
+      p {
+        color: white
+      }
+      .count {
+        font-weight: bold;
+        color: white;
+      }
     }
   }
   .right {
     display: flex;
     align-items: center;
+    .time{
+      margin-right: 20px;
+      color: white;
+    }
+    .logout{
+      margin-left: 20px;
+      color: white;
+      cursor: pointer;
+    }
   }
 }

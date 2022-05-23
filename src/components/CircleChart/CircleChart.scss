@@ -1,9 +1,12 @@
-.line {
-  width: 900px;
-  height: 450px;
-}
-
-.cicle {
-  height: 450px;
-  width: 450px;
+.charts{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // flex-basis: 100%;
+    .line{
+        flex-basis: 60%;
+    }
+    .cicle{
+        width: 40%;
+    }
 }

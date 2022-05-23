@@ -10,14 +10,18 @@ const NavBar = () => {
     <div className="navbar">
       <div className="left">
         <div className="onWallet">
-          <AccountBalanceWalletIcon style={{ float: 'left' }} />
+          <AccountBalanceWalletIcon fontSize="medium" style={{ float: 'left', color: "white" }} />
+          <>
           <p>На счёте</p>
-          <div className="count">0</div>
+          <div className="count">0 Р</div>
+          </>
         </div>
         <div className="freeze">
-          <AcUnitIcon style={{ float: 'left' }} />
+          <AcUnitIcon style={{ float: 'left', color: "white" }} />
+          <>
           <p>Заморожено</p>
-          <div className="count">0</div>
+          <div className="count">0 Р</div>
+          </>
         </div>
       </div>
       <div className="right">
@@ -26,7 +30,7 @@ const NavBar = () => {
           <p>Последний визит: %data</p>
         </div>
         <Avatar sx={{ bgcolor: 'red' }}>OP</Avatar>
-        <div className="">
+        <div className="logout">
           <LogoutIcon />
         </div>
       </div>

@@ -1,8 +1,8 @@
 .statwidget {
-  height: 400px;
-  width: 700px;
-  padding: 70px;
+  padding: 5%;
+  width: 100%;
   border-radius: 25px;
+  overflow: hidden;
   .title {
     font-size: 35px;
     color: white;
@@ -11,14 +11,16 @@
   }
   .stats {
     display: flex;
+    justify-content: space-between;
     .stats-block {
-      margin-right: 100px;
+      width: 40%;
+      margin-right: 10%;
       &__title {
         color: whitesmoke;
-        font-size: 22px;
+        font-size: 115%;
       }
       &__count {
-        font-size: 70px;
+        font-size: 110%;
         color: white;
         font-weight: bold;
       }

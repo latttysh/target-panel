@@ -16,7 +16,7 @@ const StatWidget = ({ title, today, yestarday, month, bgcolor }) => {
           <div className="stats-block__count">{yestarday}</div>
         </div>
         <div className="stats-block">
-          <div className="stats-block__title">За месяц</div>
+          <div className="stats-block__title">Месяц</div>
           <div className="stats-block__count">{month}</div>
         </div>
       </div>

@@ -10,10 +10,19 @@ function News() {
       <NavBar />
       <SubHeader title="Блог" />
       <div className="news-content">
-        <NewsItem />
-        <NewsItem />
-        <NewsItem />
-        <NewsItem />
+        <div className="news-items">
+          <NewsItem />
+          <NewsItem />
+          <NewsItem />
+          <NewsItem />
+        </div>
+        <div className="important-news">
+          <SubHeader />
+          <div className="important-news-content">
+            Новость <br /> новость <br />
+            новость
+          </div>
+        </div>
       </div>
     </div>
   );

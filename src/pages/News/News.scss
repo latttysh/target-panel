@@ -1,3 +1,15 @@
 .news-content {
   padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  .news-items {
+    background-color: antiquewhite;
+  }
+  .important-news {
+    background-color: antiquewhite;
+    width: 50%;
+    &-content {
+      padding: 20px;
+    }
+  }
 }

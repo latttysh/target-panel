@@ -1,5 +1,4 @@
 .newsitem {
-  max-width: 900px;
   height: 150px;
   display: flex;
   align-items: flex-start;
@@ -8,6 +7,8 @@
   border-bottom: 1px solid grey;
   transition: box-shadow 0.2s;
   overflow: hidden;
+  // border: 1px solid red;
+  // max-width: 1200px;
   &__img {
     margin-right: 20px;
   }

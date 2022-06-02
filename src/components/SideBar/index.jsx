@@ -41,20 +41,22 @@ const SideBar = () => {
             </li>
           </Link>
           <p className="title">Информация</p>
-          <li>
-            <QueryStatsIcon className="icon" />
-            <span>Status</span>
-          </li>
+          <Link to="/News">
+            <li>
+              <QueryStatsIcon className="icon" />
+              <span>Блог</span>
+            </li>
+          </Link>
           <li>
             <NotificationsIcon className="icon" />
             <span>Notifications</span>
           </li>
           <p className="title">SERVICES</p>
           <Link to="/Support">
-          <li>
-            <HealthAndSafetyIcon className="icon" />
-            <span>Поддержка</span>
-          </li>
+            <li>
+              <HealthAndSafetyIcon className="icon" />
+              <span>Поддержка</span>
+            </li>
           </Link>
           <li>
             <PsychologyIcon className="icon" />

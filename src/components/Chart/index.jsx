@@ -15,14 +15,21 @@ const Charts = () => {
         <div className="title-block__title">Активность</div>
         <FormControl onChange={onClick}>
           <NativeSelect
+            style={{ color: 'white' }}
             defaultValue={'today'}
             inputProps={{
               name: 'time',
               id: 'uncontrolled-native',
             }}>
-            <option value={'today'}>За сегодня</option>
-            <option value={'month'}>За месяц</option>
-            <option value={'year'}>За год</option>
+            <option value={'today'} style={{ color: 'black' }}>
+              За сегодня
+            </option>
+            <option value={'month'} style={{ color: 'black' }}>
+              За месяц
+            </option>
+            <option value={'year'} style={{ color: 'black' }}>
+              За год
+            </option>
           </NativeSelect>
         </FormControl>
       </div>

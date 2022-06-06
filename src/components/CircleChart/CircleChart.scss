@@ -1,12 +1,15 @@
-.charts{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    // flex-basis: 100%;
-    .line{
-        flex-basis: 60%;
-    }
-    .cicle{
-        width: 40%;
-    }
+.charts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #171717;
+  border-radius: 10px;
+  width: 98.5%;
+  margin: 0 auto;
+  .line {
+    flex-basis: 50%;
+  }
+  .cicle {
+    width: 20vw;
+  }
 }

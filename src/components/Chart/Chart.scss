@@ -1,8 +1,11 @@
-.chart{
-    flex: 6;
-    display: flex;
-    flex-direction: column;
-    .title-block{
-        flex-basis: 100%;
+.chart {
+  flex: 6;
+  display: flex;
+  flex-direction: column;
+  .title-block {
+    flex-basis: 100%;
+    &__title {
+      color: white;
     }
+  }
 }

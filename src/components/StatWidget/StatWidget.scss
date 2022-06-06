@@ -1,28 +1,32 @@
 .statwidget {
-  padding: 5%;
+  padding: 3%;
   width: 100%;
-  border-radius: 25px;
+  border-radius: 10px;
   overflow: hidden;
   .title {
-    font-size: 35px;
+    font-size: 1.8vw;
     color: white;
-    margin-bottom: 70px;
-    font-weight: bold;
+    margin-bottom: 2vw;
+    font-weight: medium;
   }
   .stats {
     display: flex;
     justify-content: space-between;
     .stats-block {
-      width: 40%;
-      margin-right: 10%;
+      width: 30%;
+      &:not(:last-child) {
+        border-right: 2px solid RGB(128, 186, 181);
+        margin-right: 10%;
+      }
       &__title {
-        color: whitesmoke;
-        font-size: 115%;
+        color: lightgray;
+        font-size: 0.8vw;
+        margin-bottom: 30px;
       }
       &__count {
-        font-size: 110%;
+        font-size: 1.5vw;
         color: white;
-        font-weight: bold;
+        font-weight: 700;
       }
     }
   }

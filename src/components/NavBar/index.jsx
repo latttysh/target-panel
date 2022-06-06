@@ -10,17 +10,34 @@ const NavBar = () => {
     <div className="navbar">
       <div className="left">
         <div className="onWallet">
-          <AccountBalanceWalletIcon fontSize="medium" style={{ float: 'left', color: "white" }} />
+          <AccountBalanceWalletIcon
+            fontSize="medium"
+            style={{
+              float: 'left',
+              color: 'white',
+              marginRight: '10px',
+              width: '30px',
+              height: '30px',
+            }}
+          />
           <>
-          <p>На счёте</p>
-          <div className="count">0 Р</div>
+            <p>На счёте</p>
+            <div className="count">0 Р</div>
           </>
         </div>
         <div className="freeze">
-          <AcUnitIcon style={{ float: 'left', color: "white" }} />
+          <AcUnitIcon
+            style={{
+              float: 'left',
+              color: 'white',
+              marginRight: '10px',
+              width: '30px',
+              height: '30px',
+            }}
+          />
           <>
-          <p>Заморожено</p>
-          <div className="count">0 Р</div>
+            <p>Заморожено</p>
+            <div className="count">0 Р</div>
           </>
         </div>
       </div>

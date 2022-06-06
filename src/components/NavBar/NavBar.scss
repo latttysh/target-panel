@@ -1,6 +1,6 @@
 .navbar {
   height: 50px;
-  background-color: #4f5467;
+  background-color: #171717;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -9,7 +9,7 @@
     display: flex;
     align-items: center;
     .onWallet {
-      width: 100px;
+      width: 150px;
       margin-right: 50px;
       p {
         color: white;
@@ -22,7 +22,7 @@
     .freeze {
       width: 200px;
       p {
-        color: white
+        color: white;
       }
       .count {
         font-weight: bold;
@@ -33,11 +33,11 @@
   .right {
     display: flex;
     align-items: center;
-    .time{
+    .time {
       margin-right: 20px;
       color: white;
     }
-    .logout{
+    .logout {
       margin-left: 20px;
       color: white;
       cursor: pointer;

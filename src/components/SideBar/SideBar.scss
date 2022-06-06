@@ -7,7 +7,7 @@
   flex-shrink: 0;
   min-height: 100vh;
   width: 200px;
-  background-color: #3f4352;
+  background-color: RGB(23, 23, 23);
 
   .top {
     height: 50px;
@@ -18,7 +18,7 @@
     .logo {
       font-size: 20px;
       font-weight: bold;
-      color: #1f5ce0;
+      color: white;
     }
   }
 
@@ -34,9 +34,12 @@
       list-style: none;
       margin: 0;
       padding: 0;
+      a {
+        text-decoration: none;
+      }
 
       .title {
-        font-size: 10px;
+        font-size: 14px;
         font-weight: bold;
         color: white;
         margin-top: 15px;
@@ -49,20 +52,20 @@
         padding: 5px;
         cursor: pointer;
 
-        &:hover {
-          border: 1px solid red;
-        }
-
         .icon {
-          font-size: 18px;
-          color: #1f5ce0;
+          font-size: 20px;
+          color: whitesmoke;
         }
 
         span {
           font-size: 13px;
           font-weight: 600;
-          color: white;
+          color: darkgray;
           margin-left: 10px;
+          transition: color 0.2s ease-in-out;
+          &:hover {
+            color: whitesmoke;
+          }
         }
       }
     }

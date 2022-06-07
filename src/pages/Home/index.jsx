@@ -1,5 +1,4 @@
 import './Home.scss';
-import SubHeader from '../../components/SubHeader';
 import NavBar from '../../components/NavBar';
 import StatWidget from '../../components/StatWidget';
 import Chart from '../../components/Chart';
@@ -13,7 +12,13 @@ const Home = () => {
       <div className="stats-page">
         <StatWidget title={'Заявки'} today={12} yestarday={35} month={265} bgcolor={'#171717'} />
         <StatWidget title={'Заказы'} today={0} yestarday={0} month={727} bgcolor={'#171717'} />
-        <StatWidget title={'Доходы'} today={0} yestarday={0} month={9000} bgcolor={'#171717'} />
+        <StatWidget
+          title={'Доходы'}
+          today={0}
+          yestarday={25000}
+          month={175000}
+          bgcolor={'#171717'}
+        />
       </div>
       <div className="charts">
         <Chart />

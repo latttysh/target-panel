@@ -1,15 +1,10 @@
 .news-content {
+  display: block;
   padding: 20px;
-  display: flex;
-  justify-content: space-between;
+  margin: 0 auto;
   .news-items {
-    background-color: antiquewhite;
-  }
-  .important-news {
-    background-color: antiquewhite;
-    width: 50%;
-    &-content {
-      padding: 20px;
-    }
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
   }
 }

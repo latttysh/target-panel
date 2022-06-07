@@ -1,0 +1,70 @@
+{
+  "news": [
+    {
+      "img": "",
+      "category": "CopyRight Automatico",
+      "title": "[JS]",
+      "text": ""
+    },
+    {
+      "img": "",
+      "category": "CopyRight Automatico",
+      "title": "[JS]",
+      "text": ""
+    },
+    {
+      "img": "",
+      "category": "CopyRight Automatico",
+      "title": "[JS]",
+      "text": ""
+    },
+    {
+      "img": "",
+      "category": "CopyRight Automatico",
+      "title": "[JS]",
+      "text": ""
+    },
+    {
+      "img": "",
+      "category": "CopyRight Automatico",
+      "title": "[JS]",
+      "text": ""
+    },
+    {
+      "img": "",
+      "category": "CopyRight Automatico",
+      "title": "[JS]",
+      "text": ""
+    },
+    {
+      "img": "",
+      "category": "CopyRight Automatico",
+      "title": "[JS]",
+      "text": ""
+    }
+  ],
+  "profile" :
+  {
+    "username": "GreatUser",
+    "last date": "07.06.2022 17:22",
+    "wallet": 7000,
+    "freeze": 200
+  },
+  "stats" : {
+    "applications" : {
+      "today": 25,
+      "yesterday": 23,
+      "month": 175
+    },
+    "orders" : {
+      "today": 18,
+      "yesterday": 14,
+      "month": 137
+    },
+    "profit" : {
+      "today": 45000,
+      "yesterday": 23000,
+      "month": 175000
+    }
+  }
+}

@@ -9,7 +9,6 @@ const Table = ({ col, ro }) => {
         columns={col}
         pageSize={5}
         rowsPerPageOptions={[5]}
-        // checkboxSelection
         style={{
           backgroundColor: '#171717',
           color: 'white',

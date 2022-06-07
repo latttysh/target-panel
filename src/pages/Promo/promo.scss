@@ -1,0 +1,32 @@
+.marcs-btn {
+  width: 150px;
+  height: 55px;
+  margin-left: 20px;
+  background: none;
+  border: 1px solid white;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.MuiDataGrid-root {
+  margin-left: -20px;
+}
+
+.text {
+  &-title {
+    color: white;
+    font-size: 26px;
+  }
+  &-descr {
+    color: white;
+    width: 600px;
+  }
+}
+
+.MuiOutlinedInput-input {
+  color: white !important;
+}
+
+.MuiOutlinedInput-notchedOutline {
+  border-color: white !important;
+}

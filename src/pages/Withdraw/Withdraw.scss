@@ -7,3 +7,16 @@
     width: 50%;
   }
 }
+
+.MuiInputLabel-root {
+  color: white !important;
+}
+.MuiInput-input {
+  color: white !important;
+}
+
+.MuiInput-underline {
+  &::before {
+    border-bottom: 1px solid white !important;
+  }
+}

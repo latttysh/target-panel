@@ -1,10 +1,10 @@
 import React from 'react';
 import './SubHeader.scss';
 
-const SubHeader = () => {
+const SubHeader = ({ title }) => {
   return (
     <div className="subheader">
-      <h2>Главная страница</h2>
+      <h2>{title}</h2>
     </div>
   );
 };

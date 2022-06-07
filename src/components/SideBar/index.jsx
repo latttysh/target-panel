@@ -1,12 +1,5 @@
 import './SideBar.scss';
 import DashboardIcon from '@mui/icons-material/Dashboard';
-import GroupIcon from '@mui/icons-material/Group';
-import Inventory2Icon from '@mui/icons-material/Inventory2';
-import QueryStatsIcon from '@mui/icons-material/QueryStats';
-import NotificationsIcon from '@mui/icons-material/Notifications';
-import HealthAndSafetyIcon from '@mui/icons-material/HealthAndSafety';
-import PsychologyIcon from '@mui/icons-material/Psychology';
-import SettingsIcon from '@mui/icons-material/Settings';
 import { Link } from 'react-router-dom';
 
 import PointOfSaleIcon from '@mui/icons-material/PointOfSale';
@@ -43,6 +36,12 @@ const SideBar = () => {
             </li>
           </Link>
           <p className="title">Информация</p>
+          <Link to="/promo">
+            <li>
+              <FeedIcon className="icon" />
+              <span>Промоматериалы</span>
+            </li>
+          </Link>
           <Link to="/News">
             <li>
               <FeedIcon className="icon" />

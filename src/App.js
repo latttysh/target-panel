@@ -1,7 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.scss';
 // Components
-
 import SideBar from './components/SideBar';
 // Pages
 import Home from './pages/Home';
@@ -9,6 +8,7 @@ import Support from './pages/Support';
 import Withdraw from './pages/Withdraw';
 import News from './pages/News';
 import History from './pages/History';
+import Promo from './pages/Promo';
 
 function App() {
   return (
@@ -21,6 +21,7 @@ function App() {
           <Route path="/history" element={<History />} />
           <Route path="/news" element={<News />} />
           <Route path="/support" element={<Support />} />
+          <Route path="/promo" element={<Promo />} />
           {/* <Route path="*" element={<NotFound />} /> */}
         </Routes>
       </div>

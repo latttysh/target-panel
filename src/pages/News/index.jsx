@@ -15,13 +15,14 @@ function News() {
           <NewsItem />
           <NewsItem />
           <NewsItem />
-        </div>
-        <div className="important-news">
-          <SubHeader />
-          <div className="important-news-content">
-            Новость <br /> новость <br />
-            новость
-          </div>
+          <NewsItem />
+          <NewsItem />
+          <NewsItem />
+          <NewsItem />
+          <NewsItem />
+          <NewsItem />
+          <NewsItem />
+          <NewsItem />
         </div>
       </div>
     </div>

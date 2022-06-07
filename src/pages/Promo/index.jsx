@@ -9,8 +9,16 @@ import TabPanel from '@mui/lab/TabPanel';
 import TextField from '@mui/material/TextField';
 import Table from '../../components/Table';
 import './promo.scss';
+import { useForm } from 'react-hook-form';
 
 function Promo() {
+  const {
+    register,
+    handleSubmit,
+    watch,
+    formState: { errors },
+  } = useForm();
+  const onSubmit = (data) => console.log(data);
   const [value, setValue] = React.useState('1');
 
   const handleChange = (event: React.SyntheticEvent, newValue: string) => {
@@ -81,7 +89,32 @@ function Promo() {
             </div>
           </TabPanel>
           <TabPanel value="5">
-            <div className="block">Вкладка 5</div>
+            <div className="block">
+              <TextField
+                id="outlined-basic"
+                label="Вставьте ссылку, сгенерированную вашей TDS системой"
+                variant="outlined"
+                style={{ width: '700px' }}
+              />
+              <hr style={{ marginTop: '20px' }} />
+              <div className="content">
+                <form onSubmit={handleSubmit(onSubmit)}>
+                  <div className="request">
+                    <div className="request-title">Когда отправлять запрос?</div>
+                    <div className="request-checkboxes">
+                      <input type="checkbox" placeholder="Check1" {...register('Check1', {})} />
+                    </div>
+                    <div className="request-title">Метод</div>
+                    <select {...register('method')}>
+                      <option value="post">POST</option>
+                      <option value="get">GET</option>
+                    </select>
+                    <button type="submit">сохранить</button>
+                  </div>
+                </form>
+                <div className="settings"></div>
+              </div>
+            </div>
           </TabPanel>
         </TabContext>
       </Box>

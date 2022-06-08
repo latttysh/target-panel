@@ -101,8 +101,9 @@ function Promo() {
                 <form onSubmit={handleSubmit(onSubmit)}>
                   <div className="request">
                     <div className="request-title">Когда отправлять запрос?</div>
-                    <div className="request-checkboxes">
+                    <div className="request-checkbox">
                       <input type="checkbox" placeholder="Check1" {...register('Check1', {})} />
+                      <div className="request-checkbox-title">Опция 1</div>
                     </div>
                     <div className="request-title">Метод</div>
                     <select {...register('method')}>

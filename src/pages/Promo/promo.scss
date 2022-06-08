@@ -30,3 +30,11 @@
 .MuiOutlinedInput-notchedOutline {
   border-color: white !important;
 }
+
+.request{
+  margin-top: 20px;
+  &-title{
+    color: white;
+    font-size: 26px;
+  }
+}

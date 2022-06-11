@@ -102,8 +102,20 @@ function Promo() {
                   <div className="request">
                     <div className="request-title">Когда отправлять запрос?</div>
                     <div className="request-checkbox">
-                      <input type="checkbox" placeholder="Check1" {...register('Check1', {})} />
+                      <input type="checkbox" placeholder="Option1" {...register('Option-1')} />
                       <div className="request-checkbox-title">Опция 1</div>
+                    </div>
+                    <div className="request-checkbox">
+                      <input type="checkbox" placeholder="Option2" {...register('Option-2')} />
+                      <div className="request-checkbox-title">Опция 2</div>
+                    </div>
+                    <div className="request-checkbox">
+                      <input type="checkbox" placeholder="Option2" {...register('Option-3')} />
+                      <div className="request-checkbox-title">Опция 3</div>
+                    </div>
+                    <div className="request-checkbox">
+                      <input type="checkbox" placeholder="Option2" {...register('Option-4')} />
+                      <div className="request-checkbox-title">Опция 4</div>
                     </div>
                     <div className="request-title">Метод</div>
                     <select {...register('method')}>

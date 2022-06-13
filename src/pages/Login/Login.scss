@@ -1,0 +1,37 @@
+.login{
+    .form{
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .login-logotype{
+            color: white;
+            font-weight: bold;
+            font-size: 42px;
+            margin-bottom: 30px;
+        }
+        .login-text{
+            color: white;
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+        input{
+            height: 30px;
+            outline: none;
+            background: none;
+            border: none;
+            border-bottom: 1px solid #1976d2;
+            margin-bottom: 10px;
+            color: white;
+        }
+        button{
+            width: 150px;
+            padding: 10px;
+            border: 1px solid #1976d2;
+            background: none;
+            color: white;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    }
+}

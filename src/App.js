@@ -9,21 +9,23 @@ import Withdraw from './pages/Withdraw';
 import News from './pages/News';
 import History from './pages/History';
 import Promo from './pages/Promo';
+import Login from './pages/Login';
 
 function App() {
   return (
     <div className="app">
       <SideBar />
       <div className="container">
-        <Routes>
+      <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/withdraw" element={<Withdraw />} />
           <Route path="/history" element={<History />} />
           <Route path="/news" element={<News />} />
           <Route path="/support" element={<Support />} />
           <Route path="/promo" element={<Promo />} />
+          <Route path="/login" element={<Login />} />
           {/* <Route path="*" element={<NotFound />} /> */}
-        </Routes>
+    </Routes>
       </div>
     </div>
   );

@@ -24,15 +24,16 @@ const Support = () => {
           </div>
           <TextField
             id="outlined-multiline-static"
+            className='textField'
             label="Ваш вопрос?"
             multiline
             fullWidth
-            rows={6}
+            rows={2}
             defaultValue=""
+            style={{marginBottom: 20}}
           />
           <button>Отправить</button>
         </div>
-        <div className="support-block-manager">MANAGER</div>
       </div>
     </div>
   );

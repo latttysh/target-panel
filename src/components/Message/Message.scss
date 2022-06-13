@@ -6,7 +6,11 @@
     background-color: white;
     padding: 10px 10px;
     border-radius: 5px;
-    margin-right: 10px;
-    max-width: 1000px;
+    // margin-right: 10px;
+    width: 30vw;
+  }
+  &_avatar{
+    color: white;
+    margin: 0 10px;
   }
 }

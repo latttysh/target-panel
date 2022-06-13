@@ -31,16 +31,16 @@
   border-color: white !important;
 }
 
-.request{
+.request {
   margin-top: 20px;
-  &-title{
+  &-title {
     color: white;
     font-size: 26px;
   }
-  &-checkbox{
+  &-checkbox {
     display: flex;
     align-items: center;
-    &-title{
+    &-title {
       color: white;
       margin-left: 10px;
     }
@@ -103,4 +103,29 @@
   color: white;
   line-height: 1.4;
   font-size: 16px;
+}
+
+.select {
+  display: block;
+  width: 100%;
+  min-width: 8ch;
+  max-width: 30ch;
+  border: 1px solid var(--select-border);
+  border-radius: 0.25em;
+  padding: 0.25em 0.5em;
+  font-size: 1.25rem;
+  cursor: pointer;
+  line-height: 1.1;
+  background-color: #fff;
+  background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
+  margin-bottom: 25px;
+}
+
+.btn_submit{
+  width: 150px;
+  padding: 10px;
+  border: 1px solid #1976d2;
+  background: none;
+  color: white;
+  border-radius: 10px;
 }

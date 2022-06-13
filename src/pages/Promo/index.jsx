@@ -127,45 +127,56 @@ function Promo() {
                     <div class="checkboxes__row">
                       <div class="checkboxes__item">
                         <label class="checkbox style-c">
-                          <input type="checkbox" />
+                          <input type="checkbox" {...register("CreateOffer")}/>
                           <div class="checkbox__checkmark"></div>
-                          <div class="checkbox__body">Опция 1 </div>
+                          <div class="checkbox__body">Создана заявка</div>
                         </label>
                       </div>
                     </div>
                     <div class="checkboxes__row">
                       <div class="checkboxes__item">
                         <label class="checkbox style-c">
-                          <input type="checkbox" />
+                          <input type="checkbox" {...register("PredPay")}/>
                           <div class="checkbox__checkmark"></div>
-                          <div class="checkbox__body">Опция 2</div>
+                          <div class="checkbox__body">Внесена предоплата</div>
                         </label>
                       </div>
                     </div>
                     <div class="checkboxes__row">
                       <div class="checkboxes__item">
                         <label class="checkbox style-c">
-                          <input type="checkbox" />
+                          <input type="checkbox" {...register("OfferDone")}/>
                           <div class="checkbox__checkmark"></div>
-                          <div class="checkbox__body">Опция 3</div>
+                          <div class="checkbox__body">Заказ завершён</div>
                         </label>
                       </div>
                     </div>
                     <div class="checkboxes__row">
                       <div class="checkboxes__item">
                         <label class="checkbox style-c">
-                          <input type="checkbox" />
+                          <input type="checkbox" {...register("DeclineOffer")}/>
                           <div class="checkbox__checkmark"></div>
-                          <div class="checkbox__body">Опция 4</div>
+                          <div class="checkbox__body">
+                            Возврат, отмена заказа
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="checkboxes__row">
+                      <div class="checkboxes__item">
+                        <label class="checkbox style-c">
+                          <input type="checkbox" {...register("SpamOffer")}/>
+                          <div class="checkbox__checkmark"></div>
+                          <div class="checkbox__body">Спам заявка</div>
                         </label>
                       </div>
                     </div>
                     <div className="request-title">Метод</div>
-                    <select {...register("method")}>
+                    <select {...register("method")} className="select">
                       <option value="post">POST</option>
                       <option value="get">GET</option>
                     </select>
-                    <button type="submit">сохранить</button>
+                    <button type="submit" className="btn_submit">сохранить</button>
                   </div>
                 </form>
                 <div className="settings"></div>

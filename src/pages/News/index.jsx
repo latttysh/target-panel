@@ -2,6 +2,7 @@ import React from 'react';
 import NavBar from '../../components/NavBar';
 import SubHeader from '../../components/SubHeader';
 import NewsItem from '../../components/NewsItem';
+import PrimaryNews from '../../components/PrimaryNews';
 import './News.scss';
 
 function News() {
@@ -24,6 +25,13 @@ function News() {
           <NewsItem />
           <NewsItem />
         </div>
+        <div className="primary_news">
+        <PrimaryNews/>
+        <PrimaryNews/>
+        <PrimaryNews/>
+        <PrimaryNews/>
+        <PrimaryNews/>
+      </div>
       </div>
     </div>
   );

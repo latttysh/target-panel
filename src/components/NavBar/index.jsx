@@ -1,58 +1,24 @@
-import React from 'react';
-import './NavBar.scss';
-import AccountBalanceWalletIcon from '@mui/icons-material/AccountBalanceWallet';
-import AcUnitIcon from '@mui/icons-material/AcUnit';
-import Avatar from '@mui/material/Avatar';
-import LogoutIcon from '@mui/icons-material/Logout';
+import React from "react"
+import s from "./navbar.module.scss"
 
-const NavBar = () => {
-  return (
-    <div className="navbar">
-      <div className="left">
-        <div className="onWallet">
-          <AccountBalanceWalletIcon
-            fontSize="medium"
-            style={{
-              float: 'left',
-              color: 'white',
-              marginRight: '10px',
-              width: '30px',
-              height: '30px',
-            }}
-          />
-          <>
-            <p>На счёте</p>
-            <div className="count">0 Р</div>
-          </>
+export const NavBar = () => {
+    return(
+        <div className={s.container}>
+            <div className={s.navbar}>
+                <img src="./img/logo.png" alt="logotype"/>
+                <div className={s.links}>
+                    <div className={s.links__item}>Главная</div>
+                    <div className={s.links__item}>Отзывы</div>
+                    <div className={s.links__item}>FAQ</div>
+                    <div className={s.links__item}>Гарантии</div>
+                    <div className={s.links__item}>Поддержка</div>
+                </div>
+                <div className={s.contact}>
+                    <span>Связь с нами:</span>
+                    <img src="./img/discord.png" alt="discord"/>
+                    <img src="./img/telegram.png" alt="discord"/>
+                </div>
+            </div>
         </div>
-        <div className="freeze">
-          <AcUnitIcon
-            style={{
-              float: 'left',
-              color: 'white',
-              marginRight: '10px',
-              width: '30px',
-              height: '30px',
-            }}
-          />
-          <>
-            <p>Заморожено</p>
-            <div className="count">0 Р</div>
-          </>
-        </div>
-      </div>
-      <div className="right">
-        <div className="time">
-          <p>Рады вас видеть, UserName</p>
-          <p>Последний визит: %data</p>
-        </div>
-        <Avatar sx={{ bgcolor: 'red' }}>OP</Avatar>
-        <div className="logout">
-          <LogoutIcon />
-        </div>
-      </div>
-    </div>
-  );
-};
-
-export default NavBar;
+    )
+}

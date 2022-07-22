@@ -1,0 +1,42 @@
+.container{
+  padding-top: 15px;
+  max-width: 1290px;
+  margin: 0 auto;
+
+}
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 80px;
+  .links{
+    display: flex;
+    &__item{
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 18px;
+      color: #8886AC;
+      cursor: pointer;
+      &:not(:last-child){
+        margin-right: 40px;
+      }
+    }
+  }
+  .contact{
+    display: flex;
+    align-items: center;
+    span{
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 21px;
+      color: #3C3B50;
+      margin-right: 20px;
+    }
+    img{
+      cursor: pointer;
+    }
+    img:not(:last-child){
+      margin-right: 15px;
+    }
+  }
+}

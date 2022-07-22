@@ -1,61 +1,34 @@
-import './Home.scss';
-import NavBar from '../../components/NavBar';
-import StatWidget from '../../components/StatWidget';
-import Chart from '../../components/Chart';
-import Table from '../../components/Table';
+import s from "./home.module.scss"
+import {StatsBlock} from "../../components/StatsBlock/StatsBlock";
+import {ProductBlock} from "../../components/ProductBlock"
 
 const Home = () => {
   return (
     <div className="home">
-      <NavBar />
-      {/* <SubHeader /> */}
-      <div className="stats-page">
-        <StatWidget title={'Заявки'} today={12} yestarday={35} month={265} bgcolor={'#171717'} />
-        <StatWidget title={'Заказы'} today={0} yestarday={0} month={727} bgcolor={'#171717'} />
-        <StatWidget
-          title={'Доходы'}
-          today={0}
-          yestarday={25000}
-          month={175000}
-          bgcolor={'#171717'}
-        />
-      </div>
-      <div className="charts">
-        <Chart />
-      </div>
-      <Table
-        className="table"
-        col={[
-          { field: 'date', headerName: 'Дата', width: 120 },
-          { field: 'id', headerName: 'Номер заказа', width: 120 },
-          { field: 'type', headerName: 'Тип работы', width: 350 },
-          {
-            field: 'price',
-            headerName: 'Стоимость, руб',
-            width: 140,
-          },
-          {
-            field: 'status',
-            headerName: 'Статус',
-            width: 140,
-          },
-          {
-            field: 'final',
-            headerName: 'Вознаграждение, руб',
-            width: 170,
-          },
-        ]}
-        ro={[
-          {
-            date: '23 мая 2016',
-            id: '526316',
-            type: 'Научно исследовательская работа',
-            price: 20000,
-            status: 'В работе',
-            final: '20 000р',
-          },
-        ]}
-      />
+        <div className={s.container}>
+            <div className={s.blocks}>
+                <StatsBlock title={"Пользователей"} count={"63 746"}/>
+                <StatsBlock title={"Отзывов"} count={"971"}/>
+                <StatsBlock title={"Открытий"} count={"815 041"}/>
+                <StatsBlock title={"Покупок"} count={"2 809"}/>
+                <StatsBlock title={"Выведено кристаллов"} count={"2 895 980"}/>
+            </div>
+            <div className={s.products}>
+                <div className={s.title}>
+                    <img src="./img/arrow-right.png" alt="arrow-right"/>
+                    <span>Экономьте свои деньги с донатов</span>
+                    <img src="./img/arrow-left.png" alt="arrow-left"/>
+                </div>
+                <div className={s.products__block}>
+                    <ProductBlock count={"6 480"} title={"Кристаллы"} price={"4 500"}/>
+                    <ProductBlock count={"3 280"} title={"Кристаллы"} price={"2 200₽"}/>
+                    <ProductBlock count={"1 980"} title={"Кристаллы"} price={"1 300₽"}/>
+                    <ProductBlock count={"980"} title={"Кристаллы"} price={"750₽"}/>
+                    <ProductBlock count={"300"} title={"Кристаллы"} price={"300₽"}/>
+                    <ProductBlock count={"1 шт"} title={"Благословение полной луны"} price={"299₽"}/>
+                </div>
+            </div>
+        </div>
     </div>
   );
 };

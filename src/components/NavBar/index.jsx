@@ -11,8 +11,8 @@ export const NavBar = () => {
                     <NavLink to={"/"} className={s.links__item}>Главная</NavLink>
                     <NavLink to={"/feedback"} className={s.links__item}>Отзывы</NavLink>
                     <NavLink to={"/faq"} className={s.links__item}>FAQ</NavLink>
-                    <NavLink to={"/"} className={s.links__item}>Гарантии</NavLink>
-                    <NavLink to={"/"} className={s.links__item}>Поддержка</NavLink>
+                    <NavLink to={"/guarantees"} className={s.links__item}>Гарантии</NavLink>
+                    <NavLink to={"/support"} className={s.links__item}>Поддержка</NavLink>
                 </div>
                 <div className={s.contact}>
                     <span>Связь с нами:</span>

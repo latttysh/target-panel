@@ -7,6 +7,7 @@ import Feedback from "./pages/Feedback"
 import Home from './pages/Home';
 import Support from "./pages/Support";
 import Faq from "./pages/Faq"
+import Guarantees from "./pages/Guarantees";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/feedback" element={<Feedback />} />
           <Route path="/support" element={<Support />} />
           <Route path="/faq" element={<Faq />} />
+          <Route path="/guarantees" element={<Guarantees />} />
     </Routes>
       </div>
     </div>

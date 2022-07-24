@@ -1,0 +1,25 @@
+.block{
+  width: 410px;
+  .number{
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 73px;
+    color: #3C3B50;
+    opacity: 0.06;
+    position: absolute;
+  }
+  .title{
+    padding-top: 37px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 130%;
+    color: #3C3B50;
+    margin-bottom: 15px;
+  }
+  .text{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: #5B5889;
+  }
+}

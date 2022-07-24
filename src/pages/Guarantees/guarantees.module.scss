@@ -1,0 +1,19 @@
+.container {
+  padding-top: 15px;
+  max-width: 1290px;
+  margin: 0 auto;
+  .title{
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 43px;
+    color: #3C3B50;
+    margin-bottom: 50px;
+  }
+  .items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 25px;
+    align-items: flex-start;
+  }
+}

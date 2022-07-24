@@ -5,30 +5,37 @@ import Accordion from "../../components/Accordion";
 const Faq = () => {
     const accordionData = [
         {
+            title: 'Как происходит пополнение аккаунта?',
+            content: `После оплаты , вы передаёте нам данные для входа в Центр пополнений Genshin Impact’a (официальный сайт), код с почты нам не требуется , т.к в игру мы не заходим . Как только мы получим ваши данные и уведомление об успешной оплате , то мы стараемся сразу же приступить к работе (обычно пополнение происходит в течение 6 часов , иногда 24 часа) . Когда мы пополним ваш счёт , то мы вас уведомим и попросим оставить отзыв о работе.`
+        },
+        {
             title: 'Как определяется стоимость кристаллов и предметов?',
-            content: `Стоимость предмета определяется согласно игровому магазину, иногда возможно небольшое отличие в цене. Если у товара (например, кейсы персонажей) нет точной цены, тогда мы ставим её на своё усмотрение)`
+            content: `Стоимость предмета определяется согласно игровому магазину, иногда возможно небольшое отличие в цене. Если у товара (например, кейсы персонажей) нет точной цены, тогда мы ставим ее на свое усмотрение.`
         },
         {
-            title: 'Section 2',
-            content: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia veniam
-      reprehenderit nam assumenda voluptatem ut. Ipsum eius dicta, officiis
-      quaerat iure quos dolorum accusantium ducimus in illum vero commodi
-      pariatur? Impedit autem esse nostrum quasi, fugiat a aut error cumque
-      quidem maiores doloremque est numquam praesentium eos voluptatem amet!
-      Repudiandae, mollitia id reprehenderit a ab odit!`
+            title: 'Как использовать промокод?',
+            content: `Промокоды делятся на промокоды пополнения и промокоды бонусов. Пополнения - при пополнении вы вводите промокод и получаете на 5-10-15-20 процентов больше денег, а при бонусных кодах вы просто активируете их в личном кабинете и получаете номинал кода на баланс, без пополнения личных средств.`
         },
         {
-            title: 'Section 3',
-            content: `Sapiente expedita hic obcaecati, laboriosam similique omnis architecto ducimus magnam accusantium corrupti
-      quam sint dolore pariatur perspiciatis, necessitatibus rem vel dignissimos
-      dolor ut sequi minus iste? Quas?`
-        }
+            title: 'Как быстро кристаллы поступают на счет?',
+            content: `Максимум это занимает 24 часа, обычно не более 1 часа.`
+        },
+        {
+            title: 'Вы обманываете?',
+            content: `Нет, мы никого не обманываем и стараемся развивать свой проект.`
+        },
+        {
+            title: 'Меня могут забанить в игре?',
+            content: `Мы покупаем и начисляем гемы через официальных партнеров игры Genshin Impact. Мы не используем краденные кредитные карты и прочую «чернуху», покупаем легально и честно. Бана можно не ждать`
+        },
     ];
     return (
         <div className={s.container}>
             <div className={s.title}>Частые вопросы</div>
-            <div className={s.subtitle}>Ответы на часто задаваемые вопросы наших пользователей. Не нашли ответ на свой вопрос? — Обратитесь в поддержку.</div>
-            {accordionData.map(({ title, content }, i) => (
+            <div className={s.subtitle}>Ответы на часто задаваемые вопросы наших пользователей. Не нашли ответ на свой
+                вопрос? — Обратитесь в поддержку.
+            </div>
+            {accordionData.map(({title, content}, i) => (
                 <Accordion title={title} content={content} key={i}/>
             ))}
         </div>

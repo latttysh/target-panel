@@ -51,6 +51,8 @@
   }
   .feedback__block{
     display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
     .feedback__form{
       width: 400px;
       background: #FFFFFF;
@@ -78,12 +80,15 @@
           margin-bottom: 10px;
         }
         textarea{
+          outline: none;
+          padding: 10px;
           border: 1px solid #EFEFEF;
           filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.05));
           border-radius: 6px;
           width: 360px;
           height: 150px;
           margin-bottom: 25px;
+          resize: none;
         }
         button{
           width: 174px;

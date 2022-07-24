@@ -1,0 +1,18 @@
+.container {
+  max-width: 1290px;
+  margin: 0 auto;
+  .title{
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 43px;
+    color: #3C3B50;
+    margin-bottom: 20px;
+  }
+  .subtitle{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #5B5889;
+    margin-bottom: 50px;
+  }
+}

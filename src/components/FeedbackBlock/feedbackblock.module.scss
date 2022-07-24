@@ -1,0 +1,26 @@
+.block {
+  width: 860px;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  padding: 15px 35px;
+  margin-bottom: 20px;
+  .info{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 15px;
+    .name{
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 27px;
+      color: #3C3B50;
+    }
+  }
+  .text{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #5B5889;
+  }
+}

@@ -1,4 +1,5 @@
 import s from "./feedback.module.scss"
+import {FeedbackBlock} from "../../components/FeedbackBlock";
 
 const Feedback = () => {
     return (
@@ -25,7 +26,16 @@ const Feedback = () => {
                         <button type={"button"}>Оставить отзыв</button>
                     </form>
                 </div>
-                <div className={s.feeback__items}></div>
+                <div className={s.feeback__items}>
+                    <FeedbackBlock/>
+                    <FeedbackBlock/>
+                    <FeedbackBlock/>
+                    <FeedbackBlock/>
+                    <FeedbackBlock/>
+                    <FeedbackBlock/>
+                    <FeedbackBlock/>
+                    <FeedbackBlock/>
+                </div>
             </div>
         </div>
     );

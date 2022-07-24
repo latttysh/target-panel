@@ -1,5 +1,6 @@
 import React from "react"
 import s from "./navbar.module.scss"
+import {NavLink} from "react-router-dom";
 
 export const NavBar = () => {
     return(
@@ -7,11 +8,11 @@ export const NavBar = () => {
             <div className={s.navbar}>
                 <img src="./img/logo.png" alt="logotype"/>
                 <div className={s.links}>
-                    <div className={s.links__item}>Главная</div>
-                    <div className={s.links__item}>Отзывы</div>
-                    <div className={s.links__item}>FAQ</div>
-                    <div className={s.links__item}>Гарантии</div>
-                    <div className={s.links__item}>Поддержка</div>
+                    <NavLink to={"/"} className={s.links__item}>Главная</NavLink>
+                    <NavLink to={"/feedback"} className={s.links__item}>Отзывы</NavLink>
+                    <NavLink to={"/faq"} className={s.links__item}>FAQ</NavLink>
+                    <NavLink to={"/"} className={s.links__item}>Гарантии</NavLink>
+                    <NavLink to={"/"} className={s.links__item}>Поддержка</NavLink>
                 </div>
                 <div className={s.contact}>
                     <span>Связь с нами:</span>
